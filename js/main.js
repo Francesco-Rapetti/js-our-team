@@ -34,18 +34,14 @@ const team = [
     }
 ]
 
-// print team in console
+
 for (let i = 0; i < team.length; i++) {
     for (const key in team[i]) {
+        // print team in console
         if (Object.hasOwnProperty.call(team[i], key)) {
             console.log(`${key}: ${team[i][key]}`);
         }
-    }
-}
-
-// fill cards with data
-for (let i = 0; i < team.length; i++) {
-    for (const key in team[i]) {
+        // fill cards with data
         images[i].src = `img/${team[i].img}`;
         names[i].innerHTML = team[i].name;
         roles[i].innerHTML = team[i].role;
