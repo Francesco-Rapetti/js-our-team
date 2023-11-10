@@ -1,3 +1,6 @@
+const images = document.getElementsByClassName('image');
+const names = document.getElementsByClassName('name');
+const roles = document.getElementsByClassName('role');
 const team = [
     {
         name: 'Wayne Barnett',
@@ -31,10 +34,20 @@ const team = [
     }
 ]
 
+// print team in console
 for (let i = 0; i < team.length; i++) {
     for (const key in team[i]) {
         if (Object.hasOwnProperty.call(team[i], key)) {
             console.log(`${key}: ${team[i][key]}`);
         }
+    }
+}
+
+// fill cards with data
+for (let i = 0; i < team.length; i++) {
+    for (const key in team[i]) {
+        images[i].src = `img/${team[i].img}`;
+        names[i].innerHTML = team[i].name;
+        roles[i].innerHTML = team[i].role;
     }
 }
