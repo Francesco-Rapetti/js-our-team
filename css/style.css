@@ -2,16 +2,31 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: #6c6760;
 }
 
 body {
-    background-color: #f5f5f1;
+    background-color: #f5f5f1!important;
     font-family: 'Lato', sans-serif;
+    padding: 50px;
 }
 
 #title {
     max-width: 1000px;
     margin: 0 auto;
     line-height: 30px;
-    color: #6c6760;
+}
+
+.card {
+    max-width: 400px!important;
+    padding: 0!important;
+    margin: 60px 10px;
+}
+
+.row {
+    max-width: 1400px!important;
+}
+
+p, h5 {
+    color: #6c6760!important;
 }
