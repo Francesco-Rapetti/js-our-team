@@ -41,9 +41,9 @@ for (let i = 0; i < team.length; i++) {
         if (Object.hasOwnProperty.call(team[i], key)) {
             console.log(`${key}: ${team[i][key]}`);
         }
-        // fill cards with data
-        images[i].src = `img/${team[i].img}`;
-        names[i].innerHTML = team[i].name;
-        roles[i].innerHTML = team[i].role;
     }
+    // fill cards with data
+    images[i].src = `img/${team[i].img}`;
+    names[i].innerHTML = team[i].name;
+    roles[i].innerHTML = team[i].role;
 }
